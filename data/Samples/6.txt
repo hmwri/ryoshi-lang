@@ -1,0 +1,25 @@
+//サンプル6:ミニ数独を解く
+
+@shots 1000
+@grover 2
+
+//それぞれのマスを重ね合わせ状態で定義
+int1 v0 = all
+int1 v1 = all
+int1 v2 = all
+int1 v3 = all
+
+//条件を定義
+bool ue = v0 != v1
+bool sita = v2 != v3
+bool hidari = v0 != v2
+bool migi = v1!=v3
+
+//条件に当てはまるものに印をつける
+mark ue and sita and hidari and migi
+
+//条件に当てはまったものの出現確率をあげる
+up v0,v1,v2,v3
+
+//観測
+?v0,v1,v2,v3 

@@ -1,0 +1,23 @@
+.venv/
+.matplotlib/
+.DS_Store
+
+# Generated runtime files
+compiled.py
+result.json
+data/compiled.py
+data/result.json
+data/log.txt
+data/circuit.png
+
+# Local Python / Processing caches
+data/__pycache__/
+*.pyc
+data/.idea/
+*.iml
+
+# IBM / Qiskit local credentials
+qiskitrc
+qiskit-ibm.json
+.env
+.env.*
