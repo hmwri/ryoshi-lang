@@ -87,20 +87,4 @@ Processing でこのプロジェクトを開いてスケッチを実行してく
 
 - `IBMQ` ベースの実機実行を新しい IBM Quantum 系 API に移行する
 - 実機認証まわりの扱いを整理し、設定方法を明文化する
-- 言語仕様と実装との差分を点検する
-- サンプルコードとスクリーンショットを README に追加する
 
-## Publish
-
-公開時の基本フローは以下です。
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-```
-
-公開前に、ローカルで追加した秘密情報や認証ファイルがリポジトリ直下に紛れ込んでいないか確認してください。
